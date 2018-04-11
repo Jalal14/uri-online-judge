@@ -52,18 +52,9 @@ void DecToHex(long long int n){
 }
 
 void printDig(int rem){
-    if(rem == 10){
-        cout<<"A";
-    }else if(rem == 11){
-        cout<<"B";
-    }else if(rem == 12){
-        cout<<"C";
-    }else if(rem == 13){
-        cout<<"D";
-    }else if(rem == 14){
-        cout<<"E";
-    }else if(rem == 15){
-        cout<<"F";
+    if(rem>9){
+        char r = rem+55;
+        cout<<r;
     }else{
         cout<<rem;
     }
